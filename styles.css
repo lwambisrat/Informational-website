@@ -576,6 +576,139 @@ nav a:hover {
     color: #555;
 }
 
+footer {
+  background: #fff;
+  border-top: 5px solid #26b42b;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #222;
+  margin-top: 40px;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 60px 20px 60px;
+  flex-wrap: wrap;
+}
+
+.footer-logo-social {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+}
+
+.footer-logo img {
+  width: 54px;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  margin: 0 0 20px 0;
+  font-size: 14px;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 8px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 60px;
+  flex: 1 1 0;
+  justify-content: flex-end;
+}
+
+.footer-links > div {
+  min-width: 180px;
+}
+
+.footer-links h4 {
+  font-size: 17px;
+  margin-bottom: 12px;
+  color: #26b42b;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 7px;
+  font-size: 15px;
+}
+
+.newsletter-form {
+  display: flex;
+  margin: 10px 0;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 2px 0 0 2px;
+  outline: none;
+  flex: 1;
+}
+
+.newsletter-form button {
+  background: #26b42b;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 6px 14px;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+}
+
+.footer-contact h5 {
+  margin: 15px 0 3px 0;
+  font-size: 15px;
+  color: #26b42b;
+}
+
+.footer-contact p {
+  margin: 0 0 5px 0;
+  font-size: 14px;
+}
+
+.footer-bottom {
+  background: #26b42b;
+  color: #fff;
+  text-align: center;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 15px;
+}
+
+.footer-bottom a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .footer-main {
+    flex-direction: column;
+    padding: 30px 20px 20px 20px;
+    align-items: flex-start;
+  }
+  .footer-links {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
 /* Media Queries for Responsiveness (Desktop/Tablet) */
 @media (min-width: 768px) {
     .content-wrapper {
