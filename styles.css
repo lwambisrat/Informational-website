@@ -324,27 +324,7 @@ nav a:hover {
   transform: rotateY(180deg);
 }
 
-@media (max-width: 900px) {
-  .services-cards {
-    gap: 30px;
-  }
-  .service-card {
-    width: 150px;
-    height: 180px;
-  }
-  .flip-card-front img,
-  .flip-card-back img {
-    width: 60px;
-    height: 60px;
-  }
-}
-@media (max-width: 600px) {
-  .services-cards {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-}.phone {
+.phone {
   position: absolute;
   width: 90px;
   height: 170px;
@@ -363,7 +343,9 @@ nav a:hover {
   top: 10px;
   transform: rotate(13deg);
 }
-
+.links h4{
+font-size: 60px;
+}
 .about-section {
   position: relative;
   width: 100%;
@@ -430,36 +412,34 @@ nav a:hover {
 }
 
 .content-wrapper {
-    max-width: 600px; /* Adjust based on the width of the screenshot, it looks like a mobile view */
-    margin: 0 auto;
-    background-color: #fff; /* White background for the main content area */
-    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Subtle shadow like a phone screen */
-    min-height: 100vh; /* Ensure it takes full height */
-    padding-bottom: 20px; /* Padding at the bottom of the content wrapper */
+    max-width: 600px; 
+    background-color: #fff; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    min-height: 100vh; 
+    padding-bottom: 20px; 
 }
 .section {
     padding: 20px;
     margin-bottom: 20px;
-    /* border-bottom: 1px solid #eee; */ /* Optional: if you want separators between sections */
 }
 .section h2 {
     text-align: center;
     color: #333;
     font-size: 1.8em;
     margin-bottom: 30px;
-    font-weight: bold; /* Looks bold in the design */
+    font-weight: bold; 
 }
-/* Header Styles */
+
 .main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background-color: #f7f7f7; /* Background matching the top bar in the image */
+    background-color: #f7f7f7; 
     color: #333;
     font-weight: bold;
     font-size: 1.1em;
-    border-bottom: 1px solid #eee; /* Light separator */
+    border-bottom: 1px solid #eee; 
 }
 .header-left,
 .header-right {
@@ -468,38 +448,38 @@ nav a:hover {
     gap: 15px;
 }
 .app-name {
-    color: #2e8b57; /* Dark green color from the logo */
+    color: #2e8b57; 
     font-weight: bold;
     font-size: 1.2em;
 }
 .main-header i {
-    color: #555; /* Icon color */
+    color: #555;
     font-size: 1.2em;
 }
-/* Common Styles for content blocks with image and text */
+
 .content-block {
     display: flex;
-    flex-direction: column; /* Default to column for mobile */
+    flex-direction: column; 
     align-items: center;
     gap: 20px;
     margin-top: 20px;
 }
 .content-block .image-container {
-    flex-shrink: 0; /* Prevents image from shrinking */
+    flex-shrink: 0; 
     text-align: center;
 }
 .content-block .image-container img {
     max-width: 100%;
     height: auto;
-    border-radius: 20px; /* Rounded corners for the phone images */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Slight shadow for the phone */
+    border-radius: 20px; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
 }
 .content-block .text-content {
     flex-grow: 1;
-    text-align: center; /* Default for mobile, will change for larger screens */
+    text-align: center; 
 }
 .content-block h3 {
-    color: #2e8b57; /* Green for subheadings */
+    color: #2e8b57;
     font-size: 1.5em;
     margin-bottom: 10px;
 }
@@ -507,7 +487,7 @@ nav a:hover {
     list-style: none;
     padding: 0;
     margin: 20px 0;
-    text-align: left; /* Align list items left */
+    text-align: left; 
 }
 .feature-list li {
     margin-bottom: 15px;
@@ -517,50 +497,53 @@ nav a:hover {
     align-items: center;
 }
 .feature-list li i {
-    color: #2e8b57; /* Green icon color */
+    color: #2e8b57; 
     margin-right: 10px;
     font-size: 1.2em;
 }
-/* Button Styles */
+.links a{
+  text-decoration: none;
+  color: #000000;
+}
 .btn-vendor,
 .btn-download {
     display: inline-block;
-    background-color: #ff9800; /* Orange color for buttons */
+    background-color: #ff9800; 
     color: white;
     padding: 12px 25px;
-    border-radius: 30px; /* Rounded button */
+    border-radius: 30px; 
     text-decoration: none;
     font-weight: bold;
     margin-top: 20px;
     transition: background-color 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Button shadow */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
     font-size: 1em;
 }
 .btn-vendor:hover,
 .btn-download:hover {
-    background-color: #e68a00; /* Darker orange on hover */
+    background-color: #e68a00; 
 }
 .btn-vendor i,
 .btn-download i {
     margin-left: 10px;
 }
-/* Numbered Steps (How to join us?, How it works?) */
+
 .steps-grid {
     display: grid;
-    grid-template-columns: 1fr; /* Single column on mobile by default */
+    grid-template-columns: 1fr; 
     gap: 20px;
     margin-top: 30px;
 }
 .step-item {
     display: flex;
-    align-items: flex-start; /* Align number and text at the top */
+    align-items: flex-start; 
     gap: 15px;
     text-align: left;
 }
 .step-number {
-    width: 35px; /* Size of the circle */
+    width: 35px; 
     height: 35px;
-    background-color: #ff9800; /* Orange background for number circle */
+    background-color: #ff9800; 
     color: white;
     border-radius: 50%;
     display: flex;
@@ -568,20 +551,76 @@ nav a:hover {
     align-items: center;
     font-weight: bold;
     font-size: 1.2em;
-    flex-shrink: 0; /* Prevent number from shrinking */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for numbers */
+    flex-shrink: 0; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
 }
 .step-item p {
     margin: 0;
     color: #555;
 }
 
+#top-images {
+    width: 100%;
+}
+
+#top-images h2 {
+    margin-bottom: 16px;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#top-images .images {
+    display: flex;
+    flex-direction: row; 
+    gap: 106px; 
+    justify-content: center;
+}
+
+#top-images .images img {
+    width: 150px;  
+    height: auto;
+    border-radius: 8px; 
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+}
+.images{
+  margin-top: 5%;
+}
+.footer-side-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 200px;    
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  background-color: #15b32a;
+  pointer-events: none;
+  clip-path: ellipse(85% 85% at 10% 85%);
+}
+
+.footer-side-image.left {
+  left: 0.1%;
+  height: 40vh;
+}
+
+.footer-side-image.right {
+  right: 0.1%;
+  transform: scaleX(-1);
+   height: 40vh;
+}
+.footer-contact span{
+   color: #40983B;
+}
+
 footer {
   background: #fff;
-  border-top: 5px solid #26b42b;
   font-family: 'Segoe UI', Arial, sans-serif;
   color: #222;
-  margin-top: 40px;
+  margin-top: 8%;
+   overflow: hidden;
+    position: relative;
 }
 
 .footer-main {
@@ -595,11 +634,13 @@ footer {
   display: flex;
   flex-direction: column;
   max-width: 250px;
+  margin-left: 7%;
+  margin-top: 2%;
 }
 
 .footer-logo img {
-  width: 54px;
-  margin-bottom: 10px;
+  width: 88px;
+  margin-bottom: 20px;
 }
 
 .footer-logo p {
@@ -607,17 +648,22 @@ footer {
   font-size: 14px;
 }
 
-.footer-social a {
-  display: inline-block;
+.footer-social i {
+  /* display: inline-block; */
   margin-right: 10px;
-  margin-top: 8px;
+  margin-top: 20px;
+  gap: 80%;
+  color: #40983B;
 }
 
 .footer-links {
   display: flex;
   gap: 60px;
   flex: 1 1 0;
-  justify-content: flex-end;
+margin-left: -2%;
+  justify-content: center;
+  line-height: 200%;
+  gap: 15%;
 }
 
 .footer-links > div {
@@ -625,7 +671,7 @@ footer {
 }
 
 .footer-links h4 {
-  font-size: 17px;
+  font-size: 20px;
   margin-bottom: 12px;
   color: #26b42b;
 }
@@ -676,20 +722,21 @@ footer {
 }
 
 .footer-bottom {
-  background: #26b42b;
+  background:#40983B;;
   color: #fff;
+  margin-top: 2.3%;
   text-align: center;
-  padding: 15px 10px;
+  padding: 35px 10px;
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 10%;
   font-size: 15px;
 }
 
 .footer-bottom a {
   color: #fff;
   margin: 0 10px;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 @media (max-width: 900px) {
@@ -709,27 +756,26 @@ footer {
   }
 }
 
-/* Media Queries for Responsiveness (Desktop/Tablet) */
 @media (min-width: 768px) {
     .content-wrapper {
-        max-width: 800px; /* Wider for tablets/desktops */
+        max-width: 800px; 
     }
     .content-block {
-        flex-direction: row; /* Side-by-side for larger screens */
+        flex-direction: row;
         text-align: left;
     }
     .content-block.reverse-order {
-        flex-direction: row-reverse; /* Swap order for 'For Customers' */
+        flex-direction: row-reverse; 
     }
     .content-block .text-content {
-        text-align: left; /* Align text left when beside image */
-        padding-right: 20px; /* Add some space */
+        text-align: left; 
+        padding-right: 20px; 
     }
     .content-block .image-container {
-        padding-left: 20px; /* Add some space */
+        padding-left: 20px; 
     }
     .how-to-join .steps-grid {
-        grid-template-columns: 1fr 1fr; /* Two columns for "How to join us?" on wider screens */
+        grid-template-columns: 1fr 1fr; 
     }
     .for-customers .content-block .text-content {
         padding-left: 20px;
@@ -738,7 +784,7 @@ footer {
 }
 @media (min-width: 1024px) {
     .content-wrapper {
-        max-width: 900px; /* Even wider for large desktops */
+        max-width: 900px; 
     }
 }
 @media (max-width: 500px) {
@@ -792,4 +838,138 @@ footer {
     gap: 24px;
     align-items: center;
   }
+   .services-cards {
+    gap: 30px;
+  }
+  .service-card {
+    width: 150px;
+    height: 180px;
+  }
+  .flip-card-front img,
+  .flip-card-back img {
+    width: 60px;
+    height: 60px;
+  }
 }
+@media (max-width: 600px) {
+  .services-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+
+@media (max-width: 900px) {
+  #top-images .images {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .footer-main {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-left: 0;
+  }
+
+  .footer-side-image {
+    display: none;
+  }
+
+  .footer-logo-social {
+    margin: 0 auto 20px auto;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  #top-images h2 {
+    font-size: 1.8rem;
+  }
+
+  #top-images .images img {
+    width: 100px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form input[type="email"],
+  .newsletter-form button {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+
+  .footer-links > div {
+    min-width: unset;
+    text-align: center;
+  }
+
+  .footer-logo p {
+    font-size: 13px;
+  }
+
+  .footer-contact p {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-links {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+  }
+
+  .footer-main {
+    padding: 50px 60px;
+  }
+
+  .footer-bottom {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-links {
+    gap: 15%;
+  }
+
+  .footer-main {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-logo-social {
+    margin-left: 7%;
+    margin-top: 2%;
+  }
+
+  .footer-bottom {
+    gap: 10%;
+  }
+
+  #top-images .images {
+    gap: 106px;
+  }
+
+  #top-images .images img {
+    width: 150px;
+  }
+}
+
