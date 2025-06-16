@@ -681,6 +681,160 @@ footer {
   text-decoration: underline;
 }
 
+
+
+
+
+
+
+
+
+.faq {
+  background: #fff;
+  padding: 200px;
+  border-radius: 10px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  margin-left: 16.5%;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+
+.search-bar {
+  position: relative;
+
+   margin: 50px auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 60%;
+  padding: 7px 15px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  margin-left: 10%;
+
+}
+
+.faq-main {
+  margin-top: 13%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  width:110%;
+
+
+}
+.search-bar .fa-solid{
+position: absolute;
+margin-left: 70%;
+margin-top: 1%;
+color:#ccc;
+pointer-events: none;
+
+
+
+
+}
+
+
+
+
+
+.sub-faq {
+  border-bottom: 2px solid green;
+  padding-bottom: 10px;
+  display: block;
+ 
+}
+
+.faq-question {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: larger;
+  margin-bottom: 5px;
+}
+
+.arrow {
+  font-size: 1.2rem;
+  position: absolute;
+  right: -7%;
+
+
+}
+
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  padding-left: 5px;
+}
+
+.sub-faq.active .faq-answer {
+  max-height: 200px;
+  padding-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 900px) {
   .footer-main {
     flex-direction: column;
