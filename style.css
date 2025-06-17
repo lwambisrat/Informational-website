@@ -9,7 +9,8 @@
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
+    padding: 0;
     font-family: nunito-reg;
     background: #fff;
     color: #222;
@@ -49,7 +50,6 @@ nav a:hover {
     border-bottom: 2px solid #e28f30;
 }
 
-/* Hamburger styles */
 .nav-toggle {
     display: none;
     flex-direction: column;
@@ -94,9 +94,9 @@ nav a:hover {
     min-height: 400px;
     overflow: hidden;
     gap: 32px;
+    margin: 0 auto;
 }
 
-/* Ellipse backgrounds */
 .grouped-ellipse {
     position: absolute;
     width: 1312.37px;
@@ -106,7 +106,6 @@ nav a:hover {
     transform: rotate(-25.29deg);
     z-index: -1;
     pointer-events: none;
-    /* Responsive fallback */
     min-width: 100vw;
     min-height: 80vw;
 }
@@ -139,7 +138,7 @@ nav a:hover {
     margin-left: 3em;
     z-index: 2;
     flex: 1 1 350px;
-    height: 70vh;
+    /* height: 70vh; */
 }
 
 .hero-content h1 {
@@ -173,7 +172,7 @@ nav a:hover {
 
 .hero-img {
     z-index: 2;
-    flex: 1 1 320px;
+    flex: 1 1 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,7 +180,7 @@ nav a:hover {
 
 .hero-img img {
     width: 40vw;
-    max-width: 400px;
+    max-width: 700px;
     min-width: 180px;
     object-fit: cover;
     border-radius: 50%;
@@ -190,7 +189,7 @@ nav a:hover {
 }
 
 .offer {
-    margin-top: 36px;
+    margin-top: 36px auto;
     text-align: center;
     padding: 0 2vw;
 }
@@ -214,12 +213,10 @@ nav a:hover {
     background: #F1F2D1;
     border-radius: 28px;
     box-shadow: 0 4px 20px #0001;
-    width: 18vw;
+    width: 15vw;
     min-width: 250px;
     max-width: 340px;
-    height: 32vh;
-    min-height: 320px;
-    max-height: 420px;
+    min-height: 250px;
     padding: 26px 20px 18px 20px;
     display: flex;
     flex-direction: column;
@@ -239,18 +236,18 @@ nav a:hover {
     background: #fff;
     border-radius: 50%;
     padding: 6px;
-    margin-bottom: 2em;
+    margin-bottom: 2.5em;
     width: 95px;
     height: 95px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -1.5em;
+    margin-top: -3.5em;
 }
 
 .offer-img img {
-    width: 80px;
-    height: 80px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -268,6 +265,8 @@ nav a:hover {
     background: #1113;
     border-radius: 1.5px;
     margin: 0 auto;
+    position: absolute;
+    bottom: 2em;
 }
 
 .quotes {
@@ -323,11 +322,10 @@ nav a:hover {
 
 .services-section {
     text-align: center;
-    margin-top: 2em;
+    margin: 2em auto 0;
     position: relative;
     background: #fff;
-    padding-bottom: 2em;
-    padding-top: 2em;
+    padding: 2em 0;
 }
 
 .services-section h2 {
@@ -497,7 +495,8 @@ nav a:hover {
     position: relative;
     width: 100%;
     background: #15b32a;
-    margin-top: -30px;
+    /* margin-top: -30px; */
+    margin: auto;
     padding-top: 48px;
     padding-bottom: 36px;
     min-height: 260px;
@@ -522,7 +521,7 @@ nav a:hover {
     gap: 32px;
     padding: 0 16px;
     flex-wrap: wrap;
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -533,7 +532,7 @@ nav a:hover {
     min-width: 210px;
     max-width: 340px;
     text-align: center;
-    padding: 22px 12px 18px 12px;
+    padding: 22px;
     border-radius: 30px;
     transition: border 0.22s, box-shadow 0.22s;
     box-shadow: 0 2px 8px #0002;
@@ -551,7 +550,7 @@ nav a:hover {
 .about-icon {
     width: 88px;
     height: 88px;
-    margin: 0 auto 14px auto;
+    margin: 0 auto 14px;
     background: #fff3;
     border-radius: 50%;
     display: flex;
@@ -606,17 +605,17 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 40px;
+    /* gap: 40px; */
     margin-top: 20px;
     width: 100%;
     justify-content: center;
 }
 
 .content-block .image-container {
-    /* flex-shrink: 0; */
-    text-align: center;
+    flex-shrink: 0;
     width: 45%;
-    align-items: center;
+    height: 450px;
+    text-align: center;
     justify-content: center;
     margin: 0;
     display: flex;
@@ -635,6 +634,7 @@ nav a:hover {
     text-align: left;
     width: 50%;
     min-width: 280px;
+
 }
 
 .content-block .text-content h3 {
@@ -733,6 +733,7 @@ nav a:hover {
     text-align: center;
     background: #fff;
     overflow-x: hidden;
+    margin: auto;
 }
 
 .main-title {
@@ -1024,12 +1025,12 @@ nav a:hover {
 
 .faq {
     background: #fff;
-    padding: 200px;
     border-radius: 10px;
-    max-width: 800px;
-    width: 100%;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    margin-left: 16.5%;
+    width: 70%;
+    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
+    margin: 3% auto;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
@@ -1039,9 +1040,8 @@ h1 {
 
 .search-bar {
     position: relative;
-    margin: 50px auto;
+    margin: 0 auto;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .search-bar input {
@@ -1053,11 +1053,11 @@ h1 {
 }
 
 .faq-main {
-    margin-top: 13%;
+    margin: 5% auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
-    width: 110%;
+    width: 100%;
 }
 
 .search-bar .fa-solid {
@@ -1102,6 +1102,11 @@ h1 {
 .sub-faq.active .faq-answer {
     max-height: 200px;
     padding-top: 5px;
+}
+
+#contact{
+    margin: auto;
+    width: 100%;
 }
 
 .contact-title {
@@ -1435,24 +1440,15 @@ footer {
     }
 
     .grouped-ellipse {
-        width: 110vw;
-        height: 70vw;
-        left: -30vw;
-        top: -80px;
+        display: none;
     }
 
     .lightgreen-ellipse {
-        width: 85vw;
-        height: 55vw;
-        left: -48vw;
-        top: -40px;
+        display: none;
     }
 
     .white-ellipse {
-        width: 60vw;
-        height: 35vw;
-        left: -28vw;
-        top: 10vw;
+       display: none;
     }
 
     .hero-img img {
@@ -1474,11 +1470,7 @@ footer {
         font-size: 1em;
     }
 
-    .quotes {
-        gap: 1vw;
-        padding: 1.2em 0;
-        max-width: 95vw;
-    }
+    
 
     .grape,
     .salad {
@@ -1488,7 +1480,7 @@ footer {
 
     .quotes p {
         font-size: 1.08em;
-        flex-basis: 200px;
+        flex-basis: 100px;
     }
 
     .services-section h2 {
@@ -1817,7 +1809,7 @@ footer {
     .quotes {
         flex-direction: column;
         align-items: center;
-        gap: 0.7em;
+        gap: 0.5em;
         padding: 0.7em 0;
         border-radius: 10px;
     }
