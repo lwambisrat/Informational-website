@@ -4,27 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Greens Mtaani</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/GM-Logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/1df1736bb2.js" crossorigin="anonymous"></script>
+</head>
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <img src="images/GM-Logo.png" alt="Greens Mtaani Logo">
+          <img src="images/GM-Logo.png" alt="Greens Mtaani Logo">
         </div>
+        <button class="nav-toggle" aria-label="Open navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Vendor</a>
-            <a href="#">Customer</a>
-            <a href="#">Testimonials</a>
-            <a href="#">FAQs</a>
-            <a href="#">Contact</a>
+          <a href="#home">Home</a>
+          <a href="#about-us">About Us</a>
+          <a href="#vendor">Vendor</a>
+          <a href="#customer">Customer</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#faqs">FAQs</a>
+          <a href="#contact">Contact</a>
         </nav>
-    </header>
+      </header>
     <main>
-        <section class="hero">
+        <section class="hero" id="home">
             <div class="grouped-ellipse">
                 <div class="lightgreen-ellipse"></div>
                 <div class="white-ellipse"></div>
@@ -120,30 +128,31 @@
                 <div class="phones-and-ring">
                     <!-- <div class="orange-ring"></div> -->
                     <img id="mock-ups" src="images/apron4 (1) 1.png" class="phone phone-left"
-                        alt="Grocy Green App Screen 1" />
-                    <img src="images/bag3 (1) 1.png" class="phone phone-right" alt="Grocy Green App Screen 2" />
+                        alt="Greens Mtaani App Screen 1" />
+                    <img src="images/bag3 (1) 1.png" class="phone phone-right" alt="Greens Mtaani App Screen 2" />
                 </div>
             </section>
             <section class="phones-section">
                 <div class="phones-and-ring">
                     <div class="orange-ring"></div>
                     <img src="images/customers-removebg-preview.png" class="phone phone-left"
-                        alt="Grocy Green App Screen 1" />
+                        alt="Greens Mtaani App Screen 1" />
                     <img src="images/mamamboga-removebg-preview (1).png" class="phone phone-right"
-                        alt="Grocy Green App Screen 2" />
+                        alt="Greens Mtaani App Screen 2" />
                 </div>
             </section>
             <section class="phones-section">
                 <div class="phones-and-ring">
                     <!-- <div class="orange-ring"></div> -->
                     <img id="mock-ups" src="images/black-shirt.png" class="phone phone-left"
-                        alt="Grocy Green App Screen 1" />
+                        alt="Greens Mtaani App Screen 1" />
                     <img id="mock-ups" src="images/white-shirt.png" class="phone phone-right"
-                        alt="Grocy Green App Screen 2" />
+                        alt="Greens Mtaani App Screen 2" />
                 </div>
             </section>
         </section>
-        <section class="about-section">
+
+        <section class="about-section" id="about-us">
             <h2>About Us</h2>
             <div class="about-cards">
                 <div class="about-card">
@@ -179,20 +188,19 @@
             </div>
         </section>
 
-
-    
         <section class="content-wrapper">
-            <section class="section why-choose-us">
+            <section class="section why-choose-us" id="vendor">
                 <h2>Why Choose Us</h2>
                 <div class="content-block">
                     <div class="image-container">
-                        <img src="images/mamamboga-removebg-preview (1).png" alt="Grocy Green App on Phone">
+                        <img src="images/mamamboga-removebg-preview (1).png" alt="Greens Mtaani App on Phone">
                     </div>
                     <div class="text-content">
                         <h3 class="vendor-title">For Vendors</h3>
                         <p class="vendor-description">Grow Your Business with Ease</p>
                         <ul class="feature-list">
-                            <li><svg width="59" height="63" viewBox="0 0 59 63" fill="none"
+                            <li>
+                                <svg width="59" height="63" viewBox="0 0 59 63" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M26.2222 28V0H6.55556C2.95 0 0 3.15 0 7V28H26.2222ZM32.7778 28H59V7C59 3.15 56.05 0 52.4444 0H32.7778V28ZM26.2222 35H0V56C0 59.85 2.95 63 6.55556 63H26.2222V35ZM32.7778 35V63H52.4444C56.05 63 59 59.85 59 56V35H32.7778Z"
@@ -201,7 +209,8 @@
                                 Community Support
                                 <!-- <span>Be part of a supportive network of local vendors.</span> -->
                             </li>
-                            <li><svg width="60" height="64" viewBox="0 0 60 64" fill="none"
+                            <li>
+                                <svg width="60" height="64" viewBox="0 0 60 64" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M9 64C7.35 64 5.938 63.3739 4.764 62.1216C3.59 60.8693 3.002 59.3621 3 57.6V21.52C2.1 20.9333 1.375 20.1739 0.825 19.2416C0.275 18.3093 0 17.2288 0 16V6.4C0 4.64 0.588 3.13387 1.764 1.8816C2.94 0.629333 4.352 0.00213333 6 0H54C55.65 0 57.063 0.6272 58.239 1.8816C59.415 3.136 60.002 4.64213 60 6.4V16C60 17.2267 59.725 18.3072 59.175 19.2416C58.625 20.176 57.9 20.9344 57 21.5168V57.6C57 59.36 56.413 60.8672 55.239 62.1216C54.065 63.376 52.652 64.0021 51 64H9ZM6 16H54V6.4H6V16ZM24 38.4H36C36.85 38.4 37.563 38.0928 38.139 37.4784C38.715 36.864 39.002 36.1045 39 35.2C38.998 34.2955 38.71 33.536 38.136 32.9216C37.562 32.3072 36.85 32 36 32H24C23.15 32 22.438 32.3072 21.864 32.9216C21.29 33.536 21.002 34.2955 21 35.2C20.998 36.1045 21.286 36.8651 21.864 37.4816C22.442 38.0981 23.154 38.4043 24 38.4Z"
@@ -210,7 +219,8 @@
                                 Inventory Management
                                 <!-- <span>Track orders, update your stock, and get paid fast.</span> -->
                             </li>
-                            <li><svg width="69" height="73" viewBox="0 0 69 73" fill="none"
+                            <li>
+                                <svg width="69" height="73" viewBox="0 0 69 73" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
                                         d="M63.6673 8.46279C63.6673 9.57413 63.4604 10.6746 63.0584 11.7014C62.6564 12.7281 62.0672 13.661 61.3244 14.4469C60.5816 15.2327 59.6998 15.8561 58.7293 16.2814C57.7588 16.7067 56.7187 16.9256 55.6682 16.9256C54.6178 16.9256 53.5776 16.7067 52.6071 16.2814C51.6366 15.8561 50.7548 15.2327 50.012 14.4469C49.2692 13.661 48.68 12.7281 48.278 11.7014C47.876 10.6746 47.6691 9.57413 47.6691 8.46279C47.6691 6.21832 48.5119 4.06577 50.012 2.47869C51.5121 0.891612 53.5467 0 55.6682 0C57.7897 0 59.8243 0.891612 61.3244 2.47869C62.8245 4.06577 63.6673 6.21832 63.6673 8.46279ZM68.7141 34.7271C68.5305 35.5944 68.0731 36.3695 67.4173 36.9249C66.7615 37.4804 65.9465 37.7829 65.1064 37.7827H34.983C34.0026 37.7827 33.0624 37.3707 32.3692 36.6373C31.676 35.9039 31.2866 34.9092 31.2866 33.872C31.2866 32.8348 31.676 31.8401 32.3692 31.1067C33.0624 30.3733 34.0026 29.9613 34.983 29.9613H42.849C43.7393 26.6957 45.7139 23.8798 48.4097 22.0313C51.1055 20.1828 54.3414 19.4259 57.5226 19.8997C60.7037 20.3735 63.6163 22.0462 65.7249 24.6103C67.8335 27.1744 68.9965 30.4576 69 33.8564C68.9998 34.1723 68.8991 34.479 68.7141 34.7271ZM6.69793 17.3323C6.69793 19.8367 7.63831 22.2386 9.31219 24.0095C10.9861 25.7805 13.2563 26.7754 15.6236 26.7754C17.9908 26.7754 20.2611 25.7805 21.935 24.0095C23.6088 22.2386 24.5492 19.8367 24.5492 17.3323C24.5492 14.8278 23.6088 12.4259 21.935 10.655C20.2611 8.88411 17.9908 7.88921 15.6236 7.88921C13.2563 7.88921 10.9861 8.88411 9.31219 10.655C7.63831 12.4259 6.69793 14.8278 6.69793 17.3323ZM0 47.0276C-3.0573e-08 44.857 0.404116 42.7076 1.18927 40.7022C1.97443 38.6967 3.12526 36.8746 4.57604 35.3397C6.02682 33.8048 7.74915 32.5872 9.64469 31.7566C11.5402 30.9259 13.5719 30.4984 15.6236 30.4984C17.6753 30.4984 19.7069 30.9259 21.6025 31.7566C23.498 32.5872 25.2203 33.8048 26.6711 35.3397C28.1219 36.8746 29.2727 38.6967 30.0579 40.7022C30.843 42.7076 31.2471 44.857 31.2471 47.0276V51.5015C31.2471 52.193 30.9875 52.8561 30.5254 53.345C30.0632 53.834 29.4364 54.1086 28.7829 54.1086H24.5443L22.5827 70.7161C22.5082 71.3466 22.2188 71.9266 21.7686 72.3471C21.3185 72.7676 20.7387 72.9998 20.1381 73H11.1041C10.5035 72.9998 9.92374 72.7676 9.4736 72.3471C9.02346 71.9266 8.73397 71.3466 8.6595 70.7161L6.693 54.1086H2.46429C1.81072 54.1086 1.18392 53.834 0.721773 53.345C0.259629 52.8561 0 52.193 0 51.5015V47.0276Z"
@@ -263,11 +273,12 @@
                                 </defs>
                             </svg>
 
-                            Register as a Vendor</a>
+                            Register as a Vendor
+                        </a>
                     </div>
                 </div>
             </section>
-            
+
             <section class="how-to-join">
                 <h2>How to join us?</h2>
                 <div class="join-grid">
@@ -300,11 +311,10 @@
                 </div>
             </section>
 
-            <section class="section for-customers">
-                
+            <section class="section for-customers" id="customer">
                 <div class="content-block reverse-order">
                     <div class="image-container">
-                        <img src="images/customers-removebg-preview.png" alt="Grocy Green App on Phone">
+                        <img src="images/customers-removebg-preview.png" alt="Greens Mtaani App on Phone">
                     </div>
                     <div class="text-content">
                         <h3>For Customers</h3>
@@ -375,7 +385,7 @@
                             </svg>
                             Download App <i class="fas fa-arrow-right"></i></a>
                     </div>
-                    
+
                 </div>
             </section>
 
@@ -389,7 +399,6 @@
                     <div class="step-item long-step">
                         <div class="step-number">2</div>
                         <p>Browse: Explore fresh produce in your area. </p>
-                        
                     </div>
                     <div class="step-item">
                         <div class="step-number">3</div>
@@ -399,140 +408,274 @@
             </section>
         </section>
 
-        <section class="testimonials-section">
+        <section class="testimonials-section" id="testimonials">
             <h1 class="main-title">Why Users Love Us?</h1>
             <div class="decor-img decor-veg"></div>
             <div class="decor-img decor-leaf"></div>
             <div class="decor-img decor-strawberry"></div>
             <div class="testimonials-carousel">
-              <div class="testimonial-card">
-                <div class="card-header">
-                  <span class="card-rating">66</span>
-                  <span class="card-stars">★★★★★</span>
+                <div class="testimonial-card">
+                    <div class="card-header">
+                        <span class="card-rating"><i class="fa-solid fa-quote-left"></i></span>
+                        <span class="card-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <p>Mama Kimani is always provides fresh, quality produce at great prices. She is friendly and
+                            helpful—shopping with her is a pleasure!</p>
+                    </div>
+                    <div class="card-footer">
+                        <img class="profile-img"
+                            src="testimonal-images/cheerful-black-female-chef-holding-600nw-2410142673.png"
+                            alt="Karan Smith">
+                        <div>
+                            <div class="profile-name">Karan Smith</div>
+                            <div class="profile-role">Student</div>
+                        </div>
+                    </div>
+                    <div class="card-underline"></div>
                 </div>
-                <div class="card-body">
-                  <p>Mama Kimani is always provides fresh, quality produce at great prices. She is friendly and helpful—shopping with her is a pleasure!</p>
+                <div class="testimonial-card">
+                    <div class="card-header">
+                        <span class="card-rating"><i class="fa-solid fa-quote-left"></i></span>
+                        <span class="card-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <p>Shopping here has been a game-changer for me. The produce is always fresh and the service is
+                            impeccable. I highly recommend it to anyone who values quality and reliability.</p>
+                    </div>
+                    <div class="card-footer">
+                        <img class="profile-img" src="testimonal-images/developer.png" alt="Danial Bereket">
+                        <div>
+                            <div class="profile-name">Danial Bereket</div>
+                            <div class="profile-role">Developer</div>
+                        </div>
+                    </div>
+                    <div class="card-underline"></div>
                 </div>
-                <div class="card-footer">
-                  <img class="profile-img" src="testimonal-images/cheerful-black-female-chef-holding-600nw-2410142673.png" alt="Karan Smith">
-                  <div>
-                    <div class="profile-name">Karan Smith</div>
-                    <div class="profile-role">Student</div>
-                  </div>
+                <div class="testimonial-card">
+                    <div class="card-header">
+                        <span class="card-rating"><i class="fa-solid fa-quote-left"></i></span>
+                        <span class="card-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <p>I’m always looking for the best ingredients and inspiration. This place never
+                            disappoints—freshness and variety every single time!</p>
+                    </div>
+                    <div class="card-footer">
+                        <img class="profile-img" src="testimonal-images/boy.png" alt="John Eric">
+                        <div>
+                            <div class="profile-name">John Eric</div>
+                            <div class="profile-role">Food vlogger</div>
+                        </div>
+                    </div>
+                    <div class="card-underline"></div>
                 </div>
-                <div class="card-underline"></div>
-              </div>
-              <div class="testimonial-card">
-                <div class="card-header">
-                  <span class="card-rating">66</span>
-                  <span class="card-stars">★★★★★</span>
-                </div>
-                <div class="card-body">
-                    <p>Shopping here has been a game-changer for me. The produce is always fresh and the service is impeccable. I highly recommend it to anyone who values quality and reliability.</p>
-                </div>
-                <div class="card-footer">
-                  <img class="profile-img" src="testimonal-images/developer.png" alt="Danial Bereket">
-                  <div>
-                    <div class="profile-name">Danial Bereket</div>
-                    <div class="profile-role">Developer</div>
-                  </div>
-                </div>
-                <div class="card-underline"></div>
-              </div>
-              <div class="testimonial-card">
-                <div class="card-header">
-                  <span class="card-rating">66</span>
-                  <span class="card-stars">★★★★★</span>
-                </div>
-                <div class="card-body">
-                    <p>I’m always looking for the best ingredients and inspiration. This place never disappoints—freshness and variety every single time!</p>
-                </div>
-                <div class="card-footer">
-                  <img class="profile-img" src="testimonal-images/boy.png" alt="John Eric">
-                  <div>
-                    <div class="profile-name">John Eric</div>
-                    <div class="profile-role">Food vlogger</div>
-                  </div>
-                </div>
-                <div class="card-underline"></div>
-              </div>
             </div>
-         
-              </div>
-              
-              <div class="carousel-dots">
-                <span class="dot active"></span> 
+            <div class="carousel-dots">
+                <span class="dot active"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
-              </div>
-          </section>
+            </div>
+        </section>
 
-    
-  <div id="top-images"></div> 
- 
+        <section class="faq" id="faqs">
+            <h1>FAQs</h1>
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search here" id="search" />
+            </div>
+            <div class="faq-main">
+                <div class="sub-faq">
+                    <div class="faq-question">
+                        <span>How do I update inventory and check stock?</span>
+                        <span class="arrow">&gt;</span>
+                    </div>
+                    <div class="faq-answer">
+                        To update your inventory and monitor stock levels, log in to your dashboard and navigate to the
+                        "Products" section. Here, you’ll see a list of all products along with their current stock
+                        quantities. You can manually adjust stock numbers, add new products, or mark items as out of
+                        stock. This section ensures your product listings are accurate and helps prevent overselling or
+                        stockouts.
+                    </div>
+                </div>
+                <div class="sub-faq">
+                    <div class="faq-question">
+                        <span>Where can I browse and buy items?</span>
+                        <span class="arrow">&gt;</span>
+                    </div>
+                    <div class="faq-answer">
+                        To browse and purchase items, go to the "Home page”, this page displays Mama Mbogas near you
+                        with the popular items. You can view detailed information about each item, add products to your
+                        cart, and proceed to checkout securely. All active and in-stock listings are updated in real
+                        time.
+                    </div>
+                </div>
+                <div class="sub-faq">
+                    <div class="faq-question">
+                        <span>How can I view orders and customer details?</span>
+                        <span class="arrow">&gt;</span>
+                    </div>
+                    <div class="faq-answer">
+                        You can access order history and customer profiles by going to the "Orders" and "Customers"
+                        sections within your admin dashboard. The "Orders" tab shows all placed orders with their
+                        statuses, item details, payment confirmations, and timestamps. The "Customers" section includes
+                        customer names, contact information, and their order history, allowing you to manage
+                        communication and fulfillment efficiently.
+                    </div>
+                </div>
+                <div class="sub-faq">
+                    <div class="faq-question">
+                        <span>How do I track my order status?</span>
+                        <span class="arrow">&gt;</span>
+                    </div>
+                    <div class="faq-answer">
+                        To track the status of your order, visit the "Orders" page after logging into your account.
+                        Here, you’ll see all your orders along with real-time updates such as “Pending,” “Completed,”
+                        and “Canceled”.
+                    </div>
+                </div>
+                <div class="sub-faq">
+                    <div class="faq-question">
+                        <span>How do I see and respond to reviews?</span>
+                        <span class="arrow">&gt;</span>
+                    </div>
+                    <div class="faq-answer">
+                        To manage product or service reviews, go to the "Reviews". You’ll find feedback submitted by
+                        customers, along with their ratings and comments. From here, you can choose to respond publicly
+                        to reviews, flag inappropriate content, or approve pending reviews before they go live.
+                        Responding promptly and professionally to reviews helps build trust with future customers.
+                    </div>
+                </div>
+                <div class="sub-faq">
+                    <div class="faq-question">
+                        <span>How can I contact support for help?</span>
+                        <span class="arrow">&gt;</span>
+                    </div>
+                    <div class="faq-answer">
+                        If you need assistance, you can reach our support team by visiting our informational website.
+                        Here, you’ll find multiple contact options such as email, phone call, and phone support during
+                        business hours. For common problems, check the FAQ section for immediate answers.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1 class="contact-title">Contact Us</h1>
+            <div class="contact-container">
+                <div class="contact-form-section">
+                    <h2>Ask a Question</h2>
+                    <p class="support-text">Please feel free to contact us, our customer support will be happy to help
+                        you.</p>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea placeholder="Comment" rows="4" required></textarea>
+                        <button type="submit" class="submit-btn">SUBMIT</button>
+                    </form>
+                </div>
+                <div class="contact-map-section">
+                    <img src="images/image 14.png" alt="Map" class="contact-map-img">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="top-images">
+                <h2>Product Qualities</h2>
+                <div class="images">
+                    <img src="footer-images/organic003.png" alt="">
+                    <img src="footer-images/bio2.jpeg" alt="">
+                    <img src="footer-images/eco2.jpeg" alt="">
+                    <img src="footer-images/vegan3.jpeg" alt="">
+                    <img src="footer-images/nature2.jpg" alt="">
+                    <img src="footer-images/fresh2.jpg" alt="">
+                </div>
+            </div>
+        </section>
 
     </main>
 
+    <footer>
+        <div class="footer-container">
+            <img src="footer-images/left-image.jpeg" alt="Left Side Image" class="footer-side-image left">
 
+            <div class="footer-main">
+                <div class="footer-logo-social">
+                    <div class="footer-logo">
+                        <img src="footer-images/GM-Logo.png" alt="">
+                        <p>Fresh picks,mtaani quick,everyday's a market day.</p>
+                    </div>
+                    <div class="footer-social">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-google"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
 
+                <div class="footer-links">
+                    <div class="links">
+                        <h4>Categories</h4>
+                        <ul>
+                            <li><a href="#">Fresh Produce</a></li>
+                            <li><a href="#">Poultry Produce</a></li>
+                            <li><a href="#">Dairy essentials</a></li>
+                            <li><a href="#">Cereals and organic seeds</a></li>
+                        </ul>
+                    </div>
+                    <div class="links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><a href="#">Payment options</a></li>
+                            <li><a href="#">Terms and conditions</a></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="links">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe to get 15% OFF your first order.</p>
+                        <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit">✔</button>
+                        </form>
+                        <div class="footer-contact">
+                            <h5>Contact & Support</h5>
+                            <p><span><i class="fa-solid fa-envelope-circle-check"></i></span> hello@greensmtaani.com</p>
+                            <p><span><i class="fa-solid fa-phone-volume"></i></span> +254 702 123 456</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <img src="footer-images/right-image.jpeg" alt="Right Side Image" class="footer-side-image right">
+        </div>
+        <div class="footer-bottom">
+            <span>©2025 Greens Mtaani</span>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Cookies/Ad choices</a>
+        </div>
+    </footer>
 
-  <footer>
-    <div class="footer-main">
-      <div class="footer-logo-social">
-        <div class="footer-logo">
-          <img src="https://img.icons8.com/color/96/000000/vegetarian-food-symbol.png" alt="Grocy Green Logo">
-          <p>Award Winning Food Hub on the go anytime.</p>
-        </div>
-        <div class="footer-social">
-          <a href="#"><img src="https://img.icons8.com/fluency/30/000000/twitter.png" alt="Twitter"></a>
-          <a href="#"><img src="https://img.icons8.com/fluency/30/000000/whatsapp.png" alt="WhatsApp"></a>
-          <a href="#"><img src="https://img.icons8.com/fluency/30/000000/google-logo.png" alt="Google"></a>
-        </div>
-      </div>
-
-      <div class="footer-links">
-        <div>
-          <h4>Categories</h4>
-          <ul>
-            <li>Fresh Produce</li>
-            <li>Poultry Produce</li>
-            <li>Dairy essentials</li>
-            <li>Cereals and organic seeds</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Useful Links</h4>
-          <ul>
-            <li>Payment options</li>
-            <li>Terms and conditions</li>
-            <li>My Account</li>
-            <li>Privacy Policy</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Newsletter</h4>
-          <p>Subscribe to get 15% OFF your first order.</p>
-          <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
-            <input type="email" placeholder="Your email address" required>
-            <button type="submit">✔</button>
-          </form>
-          <div class="footer-contact">
-            <h5>Contact & Support</h5>
-            <p>hello@grocygreen.com</p>
-            <p>+254 702 123 456</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>©2025 Grocy Green</span>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms and Conditions</a>
-      <a href="#">Cookies/Ad choices</a>
-    </div>
-  </footer>
-  <script src="footer.js"></script>
     <script src="index.js"></script>
 </body>
 
